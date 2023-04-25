@@ -74,6 +74,9 @@ a{
 
 /*  End Global Rules  */
 
+
+
+
 /*  STRAT LOADIN SECTION BY BASEL AHMED */
 /*  END LOADIN SECTION BY BASEL AHMED */
 
@@ -105,7 +108,7 @@ a{
 
 @media (max-width: 768px) {
     .header .container .logo  h3{
-        font-size: 30px;
+        font-size: 24px;
         color: white;
         font-weight: 900;
         padding: 15px;
@@ -128,7 +131,7 @@ a{
         position: fixed;
         background-color: rgb(35 36 37 / 94%);
         left: 100%;
-        top: 12%;
+        top: 9.5%;
         text-align: center;
         transition: all 2.5s ease-in-out forwards;
         -webkit-transition: all 2.5s ease-in-out forwards;
@@ -227,20 +230,40 @@ cursor: pointer;
     font-weight: 700;
     color: white;
     text-transform: capitalize;
+    padding: 20px 0;
     
 } 
 
+.home .container .content p:last-of-type {
+  padding-bottom: 45px;
+}
+
+@media (max-width:991px){
+  .home .container .content p {
+    font-size: 26px;
+    padding: 20px 0;
+  
+    
+} 
+}
 .home .container .content h2{
     font-size: 50px;
     font-weight: 900;
 }
+
+@media (max-width:991px){
+  .home .container .content h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+}
 .home .container  .content h2 span{
     color: white;
 }
-.home .container .content > button , button a{
+.home .container .content >  a{
     color: white;
     background-color: black;
-    width: 200px;
+    width: auto;
     height: auto;
     border: transparent 3px solid;
     border-radius: 6px;
@@ -249,12 +272,13 @@ cursor: pointer;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     font-size: 20px;
-    padding: 7px;
+    padding: 5px 20px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-top: 16px;
+    margin-top: 19px;
     cursor: pointer;
 }
+
 
 .about-me{
     background-color: white;
@@ -264,6 +288,8 @@ cursor: pointer;
 }
 .about-me .container .content{
     display: flex;
+    align-items: center;
+
 }
 
 @media (max-width:992px) {
@@ -277,17 +303,18 @@ cursor: pointer;
 
 .about-me .container .content .image{
     display: flex;
-    justify-self: end;
     width: 40%;
-    padding: 26px 45px 35px 0px;
+    display: grid;
+    justify-content: center;
+    padding: 10px 30px;
+
 }
 
 @media (max-width:992px) {
   .about-me .container .content .image{
-    display: flex;
-    justify-self: end;
+    padding: 40px 10px;
     width: 100%;
-    padding: 10% 10%;
+   
 
 }
 }
@@ -303,6 +330,14 @@ cursor: pointer;
    overflow: hidden;
    padding: 5px;
   
+}
+
+@media (max-width:992px) {
+  .about-me .container .content .sub-content
+{
+   height: 300px;
+  
+}
 }
 
 .about-me .container .content .sub-content img
@@ -325,13 +360,14 @@ cursor: pointer;
     flex-direction: column;
     justify-content: flex-start;
    position: relative;
+   
 
 }
 
 @media (max-width:992px) {
   .about-me .container .content .text
   {
-  
+    
       width: 100%;
       padding: 0px 25px;
     }
@@ -342,6 +378,15 @@ cursor: pointer;
 .about-me .container .content .text h2{
     font-size: 50px;
     font-weight: bold;
+    padding-bottom: 15px;
+}
+
+@media(max-width:767px){
+  .about-me .container .content .text h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
 }
 
 .about-me .container .content .text .sub-title{
@@ -353,7 +398,7 @@ cursor: pointer;
 .about-me .container .content .text .sub-title::after{
   content: "";
   position: absolute;
-  top: 115px;
+  top: 83px;
   margin-left: 7px;
   width: 65px;
   height: 7px;
@@ -363,7 +408,7 @@ cursor: pointer;
 .about-me .container .content .text .sub-title::before{
   content: "";
   position: absolute;
-  top: 115px;
+  top: 83px;
   margin-left: -70px;
   width: 65px;
   height: 7px;
@@ -376,7 +421,12 @@ cursor: pointer;
   line-height: 38px; 
   padding: 20px 0px;
 }
-
+@media (max-width:767px){
+  .about-me .container .content .text p{
+    font-size: 20px;
+   
+  }
+}
 .about-me .container .content .text button{
 
   font-size: 25px;
@@ -394,6 +444,7 @@ cursor: pointer;
 @media (max-width:992px) {
   .about-me .container .content .text button{
     width: 60vw;
+    font-size: 22px;
   }
 
 }
@@ -415,6 +466,14 @@ cursor: pointer;
 .special-heading h1{
   text-transform: uppercase;
   font-size: 50px;
+  margin-bottom: 46px;
+}
+
+@media(max-width:992px){
+  .special-heading h1{
+    font-size: 44px;
+    margin-bottom: 55px;
+  }
 }
 
 .special-heading p{
@@ -453,7 +512,7 @@ cursor: pointer;
 }
 
 .services .container .content .box{
-  height: 350px;
+  height: auto;
   width: 350px;
   background-color: white;
   margin: 20px;
@@ -469,11 +528,24 @@ cursor: pointer;
   text-align: center;
 }
 
+
 .services .container .content .box i{
    color: var(--main-color);
-   padding: 5px;
-   font-size: 50px;
+   padding: 15px;
+   font-size: 55px;
 }
+
+.services .container .content .box h2{
+  font-size: 27px;
+  padding: 10px;
+  
+}
+.services .container .content .box p{
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 10px 5px;
+}
+
 
 
  
@@ -500,7 +572,7 @@ cursor: pointer;
 }
 .my-skills .container .text  {
   flex: 1;
-  padding: 20px;
+  padding: 20px ;
 }
 
 .my-skills .container .text h2{
@@ -508,10 +580,20 @@ cursor: pointer;
 }
 @media (max-width:992px){
   .my-skills .container .text h2{
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px 0;
+    
   }
 }
-.my-skills .container .text button ,.my-skills .container .text button a {
+.my-skills .container .text p{
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 10px 0px;
+}
+@media (max-width:992px){
+  
+}
+.my-skills .container .text span ,.my-skills .container .text span a {
   color: white;
   background-color: var(--main-color);
   width: 200px;
@@ -528,7 +610,8 @@ cursor: pointer;
   text-transform: uppercase;
   margin-top: 16px;
   cursor: pointer;
-  margin: 30px 0;
+  margin: 50px 0;
+  display: none;
 }
 .my-skills .container .skills  {
   flex: 1;
@@ -570,7 +653,7 @@ cursor: pointer;
 }
 
 .projects{
-  height: 600px;
+  height: auto;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
 }
@@ -593,22 +676,72 @@ cursor: pointer;
   -o-border-radius: 30px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0px;
   align-items: center;
   text-align: center;
+  background-image: url(../imags/pexels-life-of-pix-67468.jpg);
+  background-size: cover;
 
+ 
 
 }
+
+
+.projects .container .content .box  .cover{
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #020c1bc9;
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  
+}
+.projects .container .content .box .cover .button{
+  background-color: transparent;
+  padding: 15px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  border: 3px white solid;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5 ease-in-out;
+  -webkit-transition: all 0.5 ease-in-out;
+  -moz-transition: all 0.5 ease-in-out;
+  -ms-transition: all 0.5 ease-in-out;
+  -o-transition: all 0.5 ease-in-out;
+}
+
+.projects .container .content .box .cover .button:hover{
+  background-color: var(--main-color);
+  border: 3px white solid;
+  color: white;
+  scale: 1.1;
+
+}
+
 
 .projects .shuffle {
   display: flex;
   justify-content: center;
+  margin: 31px 0px;
 
 }
 
 .projects .shuffle li {
   color: white !important;
-  margin: 10px;
+  margin: 0 10px;
   font-size: 22PX;
   
 }
@@ -617,6 +750,193 @@ cursor: pointer;
  color: white;
  border-bottom: solid 3px white;
  cursor: pointer;
+}
+
+.connect-me{
+  height: 600;
+  background-color: white;
+  color: black !important;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.connect-me p , .connect-me h1{
+  color: black ;
+
+}
+
+.connect-me .container .content{
+
+  display: flex;
+  flex-direction: row ;
+  padding: 20px;
+}
+
+@media (max-width:992px){
+  .connect-me .container .content{
+    flex-direction: column ;
+  }
+}
+
+.connect-me .container .content .text{
+  width: 50%;
+  height: auto;
+  padding: 25px 0;
+}
+
+@media(max-width:992px){
+  
+.connect-me .container .content .text{
+  width: 100%;
+  height: auto;
+}
+}
+
+.connect-me .container .content .text h2{
+  font-size: 37px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+@media(max-width:992px){
+  .connect-me .container .content .text h2{
+    font-size: 30px;
+    
+  }
+}
+
+.connect-me .container .content .text > p{
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 25px;
+ 
+}
+
+@media(max-width:992px){
+  .connect-me .container .content .text > p{
+    font-size: 17px;
+  }
+}
+
+.connect-me .container .content .text .detales ul li{
+  padding: 10px 0;
+}
+
+.connect-me .container .content .text .detales ul li .sub-content {
+ display: flex;
+ 
+ 
+}
+
+.connect-me .container .content .text .detales ul li .sub-content  i{
+  
+    font-size: 31px;
+    padding-right: 15px;
+    color: var(--main-color);
+    padding-top: 5px;
+  
+ }
+
+ .connect-me .container .content .text .detales ul li .sub-content .sub-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+ }
+ .connect-me .container .content .text .detales ul li .sub-content .sub-text p {
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 600;
+ }
+
+ @media (max-width:992px){
+  .connect-me .container .content .text .detales ul li .sub-content .sub-text p {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+ }
+ 
+
+
+.connect-me .container .content .form{
+  width: 50%;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.connect-me .container .content .form h3{
+  font-size: 29px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+@media(max-width:992px){
+  .connect-me .container .content .form{
+    width: 100%;
+  }
+}
+.connect-me .container .content .form input{
+    margin: 10px 0;
+    height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border: 2px var(--main-color) solid;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.connect-me .container .content .form textarea{
+  width: auto;
+  height: 240px;
+  margin: 10px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 10px;
+  resize: none;
+  border: 2px var(--main-color) solid;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+.connect-me .container .content .form input:last-of-type{
+  padding: 0;
+  background-color: var(--main-color);
+  color: white;
+  /* border: 5px black solid; */
+  padding: 3px 0px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.footer .container{
+  color: white;
+  text-align: center;
+  height: auto;
+}
+.footer .container span{
+  font-weight: 800;
+
+}
+
+.footer .container p{
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media(max-width:992px){
+  
+.footer .container p{
+  padding: 20px;
+  font-size: 12px;
+}
 }
 
 
