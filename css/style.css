@@ -354,13 +354,11 @@ cursor: pointer;
 
 .about-me .container .content .text
 {
-
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-   position: relative;
-   
+     position: relative;
 
 }
 
@@ -776,10 +774,6 @@ cursor: pointer;
   scale: 1.1;
 
 }
-
-.projects .container .content .box .cover img::after{
-  
-} 
 
 
 .projects .shuffle {
