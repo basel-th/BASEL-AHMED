@@ -590,9 +590,7 @@ cursor: pointer;
   line-height: 1.6;
   padding: 10px 0px;
 }
-@media (max-width:992px){
-  
-}
+
 .my-skills .container .text span ,.my-skills .container .text span a {
   color: white;
   background-color: var(--main-color);
