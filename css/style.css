@@ -728,7 +728,7 @@ cursor: pointer;
 
 .projects .container .content .box a{
   position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     top: 45%;
     border: 2px white solid;
@@ -794,6 +794,7 @@ cursor: pointer;
  color: white;
  border-bottom: solid 3px white;
  cursor: pointer;
+ padding-bottom: 10px;
 }
 
 .connect-me{
