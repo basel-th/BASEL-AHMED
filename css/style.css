@@ -1030,17 +1030,20 @@ cursor: pointer;
   }
   
   .animation-logo {
+    
     user-select: none;
     position: relative;
-    padding: 4px;
-    animation: scale-off 0.2s 4s ease-in-out forwards;
-    -webkit-animation: scale-off 0.2s 4s ease-in-out forwards;
+    padding: 5px;
+    animation: scale-off 0.2s 4s ease-in-out forwards; 
+     -webkit-animation: scale-off 0.2s 4s ease-in-out forwards;
   }
   
   .animation-logo .letter {
+    
     display: block;
     color: var(--website-text-color);
-    font-size: 40px;
+    font-size: 46px;
+    font-weight: 700;
     min-width: 26.5px;
     width: 26.5px;
     min-height: 46.4px;
