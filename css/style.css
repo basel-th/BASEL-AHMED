@@ -235,7 +235,8 @@ cursor: pointer;
 } 
 
 .home .container .content p:last-of-type {
-  padding-bottom: 45px;
+  padding-bottom: 20px;
+ 
 }
 
 @media (max-width:991px){
@@ -279,6 +280,23 @@ cursor: pointer;
     cursor: pointer;
 }
 
+
+
+.home .container .content .socil-links{
+  padding-bottom: 40px;
+  
+}
+.home .container .content .socil-links ul  a{
+  color: #020c1b;
+  cursor: pointer;
+}
+.home .container .content .socil-links ul  a:hover{
+  color: white;
+}
+.home .container .content .socil-links ul i{
+  padding: 5px;
+  font-size: 40px;
+}
 
 .about-me{
     background-color: white;
@@ -446,6 +464,7 @@ cursor: pointer;
   }
 
 }
+
 
 .services{
   height: auto;
