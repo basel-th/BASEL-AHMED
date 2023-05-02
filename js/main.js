@@ -3,7 +3,8 @@
 
 const animationLogoEle = document.querySelector(".animation-logo");
 const animationOverlay = document.querySelector(".container.center");
-const animationLetter = document.querySelector('.animation-logo .letter')
+const animationLetter = document.querySelector('.animation-logo .letter');
+
 
 
 let numberOFLogoAnimation = 8;
@@ -43,5 +44,19 @@ setTimeout(() => animationOverlay.style.filter = "grayscale(0)", 3000);
   }
 
  
+  const sectiomskilss = document.querySelector(".my-skills");
+
+  const allspanes = document.querySelectorAll(".my-skills span");
+
+
+  window.onscroll = function (){
+
+    if( window.scrollY >= sectiomskilss.offsetTop - 200 ){
+      console.log( "WE are reach to sectionm");
+      allspanes.forEach((span )=>{
+        span.style.width = span.dataset.width;
+      })
+    }
+  };
  
 

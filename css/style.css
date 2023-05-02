@@ -652,6 +652,7 @@ cursor: pointer;
    -ms-border-radius: 4px;
    -o-border-radius: 4px;
    color: var(--main-color);
+   
 }
 
 .my-skills .container .skills .skill .the-progress {
@@ -665,6 +666,11 @@ cursor: pointer;
    top: 0;
    height: 100%;
    background-color:var(--main-color);
+   transition:  width 0.5s linear;
+   -webkit-transition:  width 0.5s linear;
+   -moz-transition:  width 0.5s linear;
+   -ms-transition:  width 0.5s linear;
+   -o-transition:  width 0.5s linear;
 }
 
 .projects{
